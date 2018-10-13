@@ -1,10 +1,17 @@
 /* remove codrops styles and reset the whole thing */
 #container_demo{
-	 text-align: left;
-	 margin: 0;
-	 padding: 0;
-	 margin: 0 auto;
-	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+	 	text-align: left;
+	 	margin: 0;
+	 	padding: 0;
+	 	margin: 0 auto;
+	 	font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+
+	 	background-image: url('../images/suavyBizzyBoiz.jpg');
+		background-color:#cccc;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
 }
 
 /** fonts used for the icons **/
@@ -311,8 +318,11 @@ p.change_link{
 	-ms-animation-delay: .1s;
 	animation-delay: .1s;
 }
-#toregister:target ~ #wrapper #login,
-#tologin:target ~ #wrapper #register{
+#anchorRegEmployee:target ~ #wrapper #registerCompany #loginEmployee #loginCompany,
+#anchorRegCompany:target ~ #wrapper #registerEmployee #loginEmployee #loginCompany,
+#anchorLogEmployee:target ~ #wrapper #registerEmployee #registerCompany #loginCompany,
+#anchorLogCompany:target ~ #wrapper #registerEmployee #registerCompany #loginEmployee{
+	z-index: 21;
 	-webkit-animation-name: fadeOutLeft;
 	-moz-animation-name: fadeOutLeft;
 	-ms-animation-name: fadeOutLeft;
