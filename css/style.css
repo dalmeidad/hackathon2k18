@@ -1,13 +1,20 @@
 /* remove codrops styles and reset the whole thing */
 #container_demo{
-	 text-align: left;
-	 margin: 0;
-	 padding: 0;
-	 margin: 0 auto;
-	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	font-family: verdana, sans-serif;
+
+	/*background-image: url("http://www.evmi.com/wp-content/uploads/2017/01/evmp2017.jpg");*/
+	background-color:#cccc;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-/** fonts used for the icons **/ 
+/** fonts used for the icons  
 @font-face {
     font-family: 'FontomasCustomRegular';
     src: url('fonts/fontomas-webfont.eot');
@@ -27,12 +34,12 @@
          url('fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+**/
 }
 a.hiddenanchor{
 	display: none;
 }
-/** The wrapper that will contain our two forms **/
+/** The wrapper that will contain our four forms **/
 #wrapper{
 	width: 60%;
 	right: 0px;
@@ -40,6 +47,13 @@ a.hiddenanchor{
 	margin: 0px auto;	
 	width: 500px;
 	position: relative;	
+}
+#wrapper img{
+	border-radius: 50%;
+	max-width: 100%;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 /**** Styling the form elements **/
 
@@ -149,6 +163,9 @@ input {
     top: 35px;
 	width: 30px;
 }
+#wrapper ul {
+  list-style: none;
+}
 
 /*styling both submit buttons */
 #wrapper p.button input{
@@ -192,6 +209,7 @@ input {
 	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
 	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
 }
+
 p.login.button,
 p.signin.button{
 	text-align: right;
@@ -227,43 +245,11 @@ p.change_link{
 	width: 440px;
 	padding: 17px 30px 20px 30px;
 	font-size: 16px	;
-	text-align: right;
-	border-top: 1px solid rgb(219, 229, 232);
-	-webkit-border-radius: 0 0  5px 5px;
-	   -moz-border-radius: 0 0  5px 5px;
-	        border-radius: 0 0  5px 5px;
-	background: rgb(225, 234, 235);
-	background: -moz-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: -webkit-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: -o-repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
-	background: repeating-linear-gradient(-45deg, 
-	rgb(247, 247, 247) , 
-	rgb(247, 247, 247) 15px, 
-	rgb(225, 234, 235) 15px, 
-	rgb(225, 234, 235) 30px, 
-	rgb(247, 247, 247) 30px
-	);
+	text-align: center;
+	
 }
 #wrapper p.change_link a {
-	display: inline-block;
+	/*display: inline-block;*/
 	font-weight: bold;
 	background: rgb(247, 248, 241);
 	padding: 2px 6px;
@@ -289,9 +275,12 @@ p.change_link{
 	position: relative;
 	top: 1px;
 }
+
 /** Styling both forms **/
-#register, 
-#login{
+#anchorRegCompany,
+#anchorRegEmployee, 
+#anchorLogEmployee,
+#anchorLogCompany{
 	position: absolute;
 	top: 0px;
 	width: 88%;	
@@ -306,15 +295,28 @@ p.change_link{
 	-moz-border-radius: 5px;
 		 border-radius: 5px;
 }
-#register{	
+
+#loginEmployee{
+	z-index: 22;
+	opacity:1;
+}
+#loginCompany{
+	z-index: 21;
+	opacity:1;
+}
+#registerCompany{	
 	z-index: 21;
 	opacity: 0;
 }
-#login{
-	z-index: 22;
+#registerEmployee{	
+	z-index: 21;
+	opacity: 0;
 }
-#toregister:target ~ #wrapper #register,
-#tologin:target ~ #wrapper #login{
+
+#anchorRegEmployee:target ~ #wrapper #registerEmployee,
+#anchorRegCompany:target ~ #wrapper #registerCompany,
+#anchorLogEmployee:target ~ #wrapper #loginEmployee,
+#anchorLogCompany:target ~ #wrapper #loginCompany{
 	z-index: 22;
 	-webkit-animation-name: fadeInLeft;
 	-moz-animation-name: fadeInLeft;
@@ -327,8 +329,12 @@ p.change_link{
 	-ms-animation-delay: .1s;
 	animation-delay: .1s;
 }
-#toregister:target ~ #wrapper #login,
-#tologin:target ~ #wrapper #register{
+
+#anchorRegEmployee:target ~ #wrapper #registerCompany #loginEmployee #loginCompany,
+#anchorRegCompany:target ~ #wrapper #registerEmployee #loginEmployee #loginCompany,
+#anchorLogEmployee:target ~ #wrapper #registerEmployee #registerCompany #loginCompany,
+#anchorLogCompany:target ~ #wrapper #registerEmployee #registerCompany #loginEmployee{
+	z-index: 21;
 	-webkit-animation-name: fadeOutLeft;
 	-moz-animation-name: fadeOutLeft;
 	-ms-animation-name: fadeOutLeft;
@@ -336,7 +342,7 @@ p.change_link{
 	animation-name: fadeOutLeft;
 }
 
-/** the actual animation, credit where due : http://daneden.me/animate/ ***/
+/** the actual animation, credit where due : http://daneden.me/animate/ 
 .animate{
 	-webkit-animation-duration: 0.5s;
 	-webkit-animation-timing-function: ease;
@@ -359,8 +365,6 @@ p.change_link{
 	animation-fill-mode: both;
 }
 
-/** yerk some ugly IE fixes 'cause I know someone will ask "why does it look ugly in IE?", no matter how many warnings I will put in the article */
-
 .lt8 #wrapper input{
 	padding: 10px 5px 10px 32px;
     width: 92%;
@@ -380,4 +384,4 @@ p.change_link{
 	position: absolute;
 	height: 90px;
 	background: transparent;
-}
+}**/
