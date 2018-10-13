@@ -14,19 +14,19 @@ dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
-button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
-button,input{overflow:visible}button,select{text-transform:none}
-button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+button2,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+button2,input{overflow:visible}button2,select{text-transform:none}
+button2,html [type=button2],[type=reset],[type=submit]{-webkit-appearance:button2}
+button2::-moz-focus-inner, [type=button2]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button2:-moz-focusring, [type=button2]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted button2Text}
 fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
 [type=checkbox],[type=radio]{padding:0}
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=number]::-webkit-inner-spin-button2,[type=number]::-webkit-outer-spin-button2{height:auto}
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
-[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+[type=search]::-webkit-search-cancel-button2,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
-::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+::-webkit-file-upload-button2{-webkit-appearance:button2;font:inherit}
 /* End extract */
 
 html,body{
@@ -43,6 +43,10 @@ h1{
   font-size:36px
 }
 
+h2{
+  font-size:30px
+}
+
 h3{
   font-size:24px
 }
@@ -51,11 +55,63 @@ h4{
   font-size:20px
 }
 
-h1, h3, h4{
+h1, h2, h3, h4{
   font-family:"Segoe UI",Arial,sans-serif;
   font-weight:400;
   margin:10px 0
 }.wide{letter-spacing:4px}
+
+
+
+#IPSA_Header{
+	margin:0;
+  padding:0;
+  display:inline;
+	text-align:left;
+}
+
+#IPSA{
+	font-size: 64px;
+	color: rgb(6, 106, 117);
+	padding: 20px 0 20px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+/* Change the link color to #111 (black) on hover */
+/*li a:hover {
+    background-color: #111;
+}
+
+ul#menu
+{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+		float: right;
+}
+
+li {
+    display: inline;
+		float: right;
+}
+
+li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+
 
 /*Our Extra CSS commands*/
 
@@ -66,10 +122,10 @@ h1, h3, h4{
 .table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}
 .hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}.centered tr th,.centered tr td{text-align:center}
 .table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
-.btn,.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.btn,.button2{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.btn,.button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
+.btn,.button2{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.disabled,.btn:disabled,.button2:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
 .btn.disabled:hover,.btn:disabled:hover{box-shadow:none}
 .badge,.tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.badge{border-radius:50%}
 .ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ul li:last-child{border-bottom:none}
@@ -80,20 +136,20 @@ h1, h3, h4{
 .dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .dropdown-hover:hover .dropdown-content{display:block}
 .dropdown-hover:first-child,.dropdown-click:hover{background-color:#ccc;color:#000}
-.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
+.dropdown-hover:hover > .button2:first-child,.dropdown-click:hover > .button2:first-child{background-color:#ccc;color:#000}
 .dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .check,.radio{width:24px;height:24px;position:relative;top:6px}
 .sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
 .bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
 .bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
-.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+.bar-block .dropdown-hover .button2,.bar-block .dropdown-click .button2{width:100%;text-align:left;padding:8px 16px}
 .main,#main{transition:margin-left .4s}
 .modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
-.bar .button{white-space:normal}
+.bar .button2{white-space:normal}
 .bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
 .responsive{display:block;overflow-x:auto}
@@ -116,7 +172,7 @@ h1, h3, h4{
 @media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
 .dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}
 .hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
-.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button2,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button2{width:100%}}
 @media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
@@ -171,7 +227,7 @@ h1, h3, h4{
 .padding-32{padding-top:32px!important;padding-bottom:32px!important}.padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .left{float:left!important}.right{float:right!important}
-.button:hover{color:#000!important;background-color:#ccc!important}
+.button2:hover{color:#000!important;background-color:#ccc!important}
 .transparent,.hover-none:hover{background-color:transparent!important}
 .hover-none:hover{box-shadow:none!important}
 
