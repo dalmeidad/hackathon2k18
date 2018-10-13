@@ -232,7 +232,7 @@ p.change_link{
 
 
 #wrapper p.change_link a {
-	display: inline-block;
+	display: block;
 	font-weight: bold;
 	background: rgb(247, 248, 241);
 	padding: 2px 6px;
@@ -253,6 +253,7 @@ p.change_link{
 	color: rgb(57, 191, 215);
 	background: rgb(247, 247, 247);
 	border: 1px solid rgb(74, 179, 198);
+	text-decoration: line-through;
 }
 #wrapper p.change_link a:active{
 	position: relative;
@@ -276,17 +277,29 @@ p.change_link{
 	-moz-border-radius: 5px;
 		 border-radius: 5px;
 }
-#register{
+
+#loginEmployee{
+	z-index: 20;
+	opacity:1;
+}
+#loginCompany{
+	z-index: 21;
+	opacity:0;
+}
+#registerCompany{
+
 	z-index: 21;
 	opacity: 0;
 }
 #login{
 	z-index: 22;
 }
-#toregister:target ~ #wrapper #register,
-#toregister:target ~ #wrapper #register2
-#tologin:target ~ #wrapper #login{
-	z-index: 22;
+
+#anchorRegEmployee:target ~ #wrapper #registerEmployee,
+#anchorRegCompany:target ~ #wrapper #registerCompany,
+#anchorLogEmployee:target ~ #wrapper #loginEmployee,
+#anchorLogCompany:target ~ #wrapper #loginCompany{
+	z-index: 20;
 	-webkit-animation-name: fadeInLeft;
 	-moz-animation-name: fadeInLeft;
 	-ms-animation-name: fadeInLeft;
