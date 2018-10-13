@@ -9,7 +9,7 @@
     font-style: normal;
 }
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
@@ -22,7 +22,7 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
+fieldset,img {
 	border:0;
 }
 address,caption,cite,code,dfn,th,var {
@@ -160,4 +160,3 @@ a{
 	background: rgba(255,255,255,0.9);
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
-
