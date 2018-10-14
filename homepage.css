@@ -114,7 +114,7 @@ p .text-black{
   padding-bottom: 32px;
 }
 
-.col-xs-1, .col-xs-3, .col-xs-4{
+.col-xs-1, .col-xs-3, .col-xs-4, .col-xs-5{
   height:200px;
 }
 
@@ -130,6 +130,41 @@ p .text-black{
   width:80%;
   height:80%;
 }
+
+.intro_text{
+  text-align:left;
+  padding-top:124px;
+  padding-bottom: 24px;
+}
+
+.mid_page_button{
+  background-color: #7FFFD4;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 10%;
+  vertical-align:middle;
+  overflow:hidden;
+  cursor:pointer;
+  display:inline-block;
+  text-align:left;
+  padding:12px 18px;
+}
+
+.mid_page_button:hover{
+    text-decoration:none;
+    color:#000!important;
+    background-color:#5EDFCE!important
+}
+
+.help_intro_text{
+  text-align: center;
+  padding-top: 120px;
+}
+
+.center_text{
+  text-align: center;
+}
+
 
 /* Change the link color to #111 (black) on hover */
 /*li a:hover {
@@ -178,7 +213,19 @@ li p {
 .table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}
 .hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}.centered tr th,.centered tr td{text-align:center}
 .table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
-.btn,.button2{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+.btn,.button2{border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap}
+
 .btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .btn,.button2{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .disabled,.btn:disabled,.button2:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
