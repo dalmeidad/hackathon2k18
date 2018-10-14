@@ -1,13 +1,12 @@
 body{
-	background-image:url('../images/background.jpg'), url('../images/suavyBizzyBoiz.jpg');
-	background-blend-mode: multiply;
-	background-color:#cccc;
+	background-image:url('../images/suavyBizzyBoiz.jpg');
+	background-blend-mode: normal;
+	background-color:#fff;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
-
 
 a.hiddenanchor{
 	display: none;
